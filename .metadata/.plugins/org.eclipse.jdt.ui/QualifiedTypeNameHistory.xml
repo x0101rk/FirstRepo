@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="linklistpkg.RemoveDups.Node"/>
+<fullyQualifiedTypeName name="linklistpkg.ReverseLinkedList.Node"/>
+<fullyQualifiedTypeName name="linklistpkg.ReverseLinkedList"/>
+<fullyQualifiedTypeName name="Set.SetTest"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="practice.MyRunner"/>
+<fullyQualifiedTypeName name="practice.SecondRunner"/>
+<fullyQualifiedTypeName name="practice.ClientThreader"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="practice.WaitAndNotifyObj"/>
+<fullyQualifiedTypeName name="practice.TheadB"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="practice.Student"/>
+<fullyQualifiedTypeName name="threadPracticeTwo.Teacher"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="threadPracticeTwo.TeacherIdSort"/>
+<fullyQualifiedTypeName name="java.io.Reader"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="threadPracticeTwo.Employee"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="threadPracticeTwo.WriterThread"/>
+<fullyQualifiedTypeName name="threadPracticeTwo.ReaderThread"/>
+<fullyQualifiedTypeName name="cmdLinePrgm.Pair"/>
+<fullyQualifiedTypeName name="cmdLinePrgm.MinMaxAlgo"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.ListIterator"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
+<fullyQualifiedTypeName name="singleton.Singleton"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="java.io.ObjectStreamException"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="googlePkg.SubStinger"/>
+</qualifiedTypeNameHistroy>

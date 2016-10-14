@@ -1,0 +1,8 @@
+package pojo;
+
+public class Employee {
+
+	String firstName;
+	String LastName;
+	int id;
+}

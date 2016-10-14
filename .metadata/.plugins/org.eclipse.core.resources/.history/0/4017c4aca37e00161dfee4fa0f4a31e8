@@ -1,0 +1,10 @@
+package logicBasic;
+
+public class Validator {
+
+	public static void main(String[] args) {
+		A a = new B();
+		int i = 2;
+		a.calc(i);
+	}
+}

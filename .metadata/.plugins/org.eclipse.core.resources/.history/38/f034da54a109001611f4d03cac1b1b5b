@@ -1,0 +1,10 @@
+package practice;
+
+public class SecondRunner implements Runnable {
+
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

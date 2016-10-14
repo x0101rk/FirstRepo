@@ -1,0 +1,8 @@
+package logicBasic;
+
+public class B extends A {
+
+	public static void calc(int i){
+		
+	}
+}

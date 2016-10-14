@@ -1,0 +1,13 @@
+package polymorphism;
+
+public class SubclassB extends Base {
+
+	public static void main(String[] args) {
+	
+		SubclassB.test();
+	}
+	
+	public static void test(){
+		System.out.print("Subclass..");
+	}
+}

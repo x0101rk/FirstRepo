@@ -1,0 +1,50 @@
+package encrypt.it;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Encrypto {
+	public static void main(String[] args) {
+		Map<Character, Integer> alphaNum = new HashMap<>();
+		alphaNum.put(' ', 1);
+		alphaNum.put('a', 2);
+		alphaNum.put('b', 3);
+		alphaNum.put('c', 4);
+		alphaNum.put('d', 5);
+		alphaNum.put('e', 6);
+		alphaNum.put('f', 7);
+		alphaNum.put('g', 8);
+		alphaNum.put('h', 9);
+		alphaNum.put('i', 10);
+		alphaNum.put('j', 11);
+		alphaNum.put('k', 12);
+		alphaNum.put('l', 13);
+		alphaNum.put('m', 14);
+		alphaNum.put('n', 15);
+		alphaNum.put('o', 16);
+		alphaNum.put('p', 17);
+		alphaNum.put('q', 18);
+		alphaNum.put('r', 19);
+		alphaNum.put('s', 20);
+		alphaNum.put('t', 21);
+		alphaNum.put('u', 22);
+		alphaNum.put('v', 23);
+		alphaNum.put('w', 24);
+		alphaNum.put('x', 25);
+		alphaNum.put('y', 26);
+		alphaNum.put('z', 27);
+		
+		String encryptThis = "a quick brown fox jumped over a lazy wolf on the ground in a race";
+		for(int i = 0; i < encryptThis.length() ; i++){
+			if(alphaNum.get(encryptThis.charAt(i)) < 8){
+				 System.out.print(alphaNum.get(encryptThis.charAt(i))*5);				  
+			}
+			else if( alphaNum.get(encryptThis.charAt(i)) > 8 &&  alphaNum.get(encryptThis.charAt(i)) < 16 ){
+				System.out.print(alphaNum.get(encryptThis.charAt(i))*2);
+			}
+			else if( alphaNum.get(encryptThis.charAt(i)) > 16 ){
+				System.out.print(alphaNum.get(encryptThis.charAt(i)) + 7);
+			}
+		}
+	}
+}

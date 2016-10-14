@@ -1,0 +1,15 @@
+package practice;
+
+public class LearningThread {
+
+	// Simple Thread
+	
+	public void threadMessage(String str){
+		System.out.print(Thread.currentThread().getName()+ " : "+ str);
+	}
+	
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package practice;
+
+public class MyRunner implements Runnable {
+
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

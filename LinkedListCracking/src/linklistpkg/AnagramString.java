@@ -1,0 +1,34 @@
+package linklistpkg;
+
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class AnagramString {
+
+	public static void main(String[] args) throws IOException {
+		System.out.println("Enter the strings to compare : ");
+		Scanner in = new Scanner(System.in);
+
+		String chr1 = in.nextLine();
+		String chr2 = in.nextLine();
+		if (isAnagram(chr1, chr2)) {
+			System.out.println(chr1 + " is an anagram of : "
+					+ chr2.toString());
+		}
+		else
+			System.out.println("NOPE!");
+
+		in.close();
+	}
+
+	public static boolean isAnagram(String str1,String str2) {
+		char[] chr1 = str1.toCharArray();
+		char[] chr2 = str2.toCharArray();
+		Arrays.sort(chr1);// nlogn
+		Arrays.sort(chr2);// nlogn
+		return Arrays.equals(chr1, chr2);
+
+	}
+
+}

@@ -1,0 +1,46 @@
+package arrayPractice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SecondMax {
+
+	public static void main(String[] args) {
+		int[] a = { 10, 5, 7, 8, 6, 4 };
+		int max = 0, secondMax = 0, pos = 0;
+		for (int i = 0; i < a.length; i++) {
+			if (max < a[i]) {
+				max = a[i];
+				pos = i;
+			}
+			if (secondMax < a[i] && pos != i) {
+				secondMax = i;
+			}
+		}
+		System.out.print("Max: " + pos + "\nSecond Max: " + a[secondMax-1]);
+		List<Integer> aList = new ArrayList<Integer>();
+		aList.add(20);
+		aList.add(2);
+		aList.add(23);
+		aList.add(4);
+		aList.add(8);
+		
+		System.out.println("Second Max: "+findSecondMax(aList));
+	}
+	
+	public static int findSecondMax(List<Integer> a){
+		Integer[] iArray = a.toArray(new Integer[a.size()]);
+		int max = 0, secondMax = 0, pos = 0;
+		for (int i = 0; i < iArray.length; i++) {
+			if (max < iArray[i]) {
+				max = iArray[i];
+				pos = i;
+			}
+			if (secondMax < iArray[i] && pos != i) {
+				secondMax = i;
+			}
+		}
+		return iArray[secondMax];
+	}
+	
+}

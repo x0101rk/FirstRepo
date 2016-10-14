@@ -1,0 +1,35 @@
+package Set;
+
+
+public class SetTest {
+
+	public static void main(String[] args) {
+		
+		int[] present = new int[100];
+		int[] missing = null;
+	  /*Collection<Integer> s = new ArrayList<Integer>();
+	  Collection<Integer> r = new ArrayList<Integer>();*/
+		present[0] = 1;
+		present[6] = 5;
+	for(int i : present){
+			  System.out.println(i);
+		 }
+	  for(int i = 0; i < 100; i++){
+		  if(present[i]<1){
+			  present[i-1] = i;			  
+		  }
+	  }
+	  /*for(int i : present){
+		  System.out.println(i);
+	  }*/
+	  /*r.add(2);
+	  r.add(4);
+	  r.add(5);*/
+	  /*
+	  Collection<Integer> k = new HashSet<Integer>(s);
+	  k.removeAll(r);
+	  
+	  System.out.println("Elements in k : " + k);*/
+	}
+
+}

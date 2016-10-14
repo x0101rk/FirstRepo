@@ -1,0 +1,44 @@
+package googlePkg;
+
+public class TheCake {
+
+	public static void main(String args[]) {
+		System.out.println(TheCake.answer("aabaabaabaaba"));
+	}
+
+	public static int answer(String s) {
+		if(s.length() > 200) return -1;
+		String suffix[] = new String[s.length()];
+		int i = 1;
+		suffix[0] = s.substring(0, 1);
+		while (i < s.length()) {
+			suffix[i] = suffix[i - 1].concat(s.substring(i, i + 1));
+			i++;
+		}
+		int count = 0;
+		int cut = 0;
+
+		for (int j = 0; j < suffix.length; j++) {
+			int suffixLength = suffix[j].length();
+			int index = 0;
+			while (!(index + suffixLength > s.length())) {
+				if (suffix[j].equals(s.substring(index, index + suffixLength)) && (s.length()%suffix[j].length() == 0)) {					
+					 ++count;
+				}
+				else{
+					break;
+				}
+				index+=suffixLength;
+			}
+			
+			if((cut < count) && (s.length()%suffix[j].length() == 0)){
+				cut = count;
+				System.out.println(suffix[j]);
+			}
+			
+			count = 0;
+		}
+		return cut;
+		
+	}
+}

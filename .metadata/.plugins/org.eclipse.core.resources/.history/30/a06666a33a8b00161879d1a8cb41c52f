@@ -1,0 +1,60 @@
+package pojo;
+
+public class Employee implements Comparable {
+
+	String firstName;
+	String lastName;
+	int id;
+	
+	public Employee(String firstName, String lastName, int id) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.id = id;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int compareTo(Object arg0) {
+		if()
+		return 0;
+	}
+	
+	public static void main(String[] args) {
+		Employee emp1 = new Employee();
+		Employee emp2 = new Employee();
+		Employee emp3 = new Employee();
+		Employee emp4 = new Employee();
+		Employee emp5 = new Employee();
+		Employee emp6 = new Employee();
+		
+		emp1.setFirstName("1st Name");
+		emp2.setFirstName("2 Name");
+		emp3.setFirstName("3 Name");
+		emp4.setFirstName("4 Name");
+		emp5.setFirstName("5 Name");
+		emp6.setFirstName("6 Name");
+		
+	}
+}

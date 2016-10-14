@@ -1,0 +1,26 @@
+package practice;
+
+public class LearningThread {
+
+	// The Runnable interface has only one method
+	/*
+	 * If our class implements runnable interface then
+	 * our class becomes a thead class. Hence the runnable is a marker interface
+	 * 
+		
+*/	
+	
+	public static void main(String[] args) {
+		Thread t = new Thread(new MyRunner());
+		Thread t1 = new Thread(new MyRunner());
+		t.setPriority(7);
+		t.setName("1");
+		t1.setName("2");
+		t.start();
+		t1.start();
+		for(int i=0;i<10;i++){
+			System.out.println("main");
+		}
+	}
+
+}

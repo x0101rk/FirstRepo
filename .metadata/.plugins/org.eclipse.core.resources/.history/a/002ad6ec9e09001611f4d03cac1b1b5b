@@ -1,0 +1,24 @@
+package practice;
+
+public class MyRunner implements Runnable {
+
+	private String s = null;
+	public void run() {
+		for(int i=0;i<10;i++){
+			System.out.println("I am a thread");
+		}
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		System.out.println("I am thread " + s);
+	}
+	public String getS() {
+		return s;
+	}
+	public void setS(String s) {
+		this.s = s;
+	}
+
+}

@@ -1,0 +1,32 @@
+package linklistpkg;
+
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class AnagramString {
+
+	public static void main(String[] args) throws IOException {
+		System.out.println("Enter the string to compare to compare : ");
+		Scanner in = new Scanner(System.in);
+
+		char[] chr1 = in.nextLine().toCharArray();
+		char[] chr2 = in.nextLine().toCharArray();
+		if (isAnagram(chr1, chr2)) {
+			System.out.println(chr1.toString() + "is an anagram of : "
+					+ chr2.toString());
+		}
+		else
+			System.out.println("NOPE!");
+
+		in.close();
+	}
+
+	public static boolean isAnagram(char[] chr1, char[] chr2) {
+		Arrays.sort(chr1);
+		Arrays.sort(chr2);
+		return chr1.equals(chr2);
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package cmdLinePrgm;
+
+import java.util.Vector;
+
+public class CompComp {
+	public static void main(String[] args) {
+		List<String> alpa = new Vector<String>();
+	}
+
+}

@@ -1,0 +1,22 @@
+package polymorphism;
+
+public class SubclassB extends Base {
+
+	int local = 22;
+	public static void main(String[] args) {
+	
+		SubclassB.test();
+	}
+	
+	public static void test(){
+		System.out.print("Subclass..");
+	}
+	
+	class Zeta implements PolyImpl{
+
+		public void printerme() {
+			System.out.print(local);	
+		}
+		
+	}
+}

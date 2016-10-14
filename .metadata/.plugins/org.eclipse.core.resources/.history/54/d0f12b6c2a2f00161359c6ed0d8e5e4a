@@ -1,0 +1,14 @@
+package logicBasic;
+
+public class StartRepeat {
+
+	public static void main(String[] args) {
+		String star = "";
+		for (int j = 0; j < 5; j++) {
+			for (int i = 0; i < 4; i++) {
+				star = star + "*";
+			}
+		}
+		System.out.print(star);
+	}
+}

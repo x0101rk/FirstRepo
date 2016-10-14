@@ -1,0 +1,40 @@
+package googlePkg;
+
+public class SubStinger {
+
+	public static void main(String args[]) {
+		SubStinger.subst("abcabcabc");
+
+	}
+
+	public static void subst(String s) {
+		String tempString[] = new String[s.length()];
+		int i = 1;
+		tempString[0] = s.substring(0, 1);
+		while (i < s.length()) {
+			tempString[i] = tempString[i - 1].concat(s.substring(i, i + 1));
+			i++;
+		}
+
+		for (int j = 0; j < tempString.length; j++) {
+			System.out.println(tempString[j]);
+		}
+		int tlen = 0;
+		int mlen = 0;
+		int lastIndex = 0;
+		int count = 0;
+		for (int k = 0; k < tempString.length; k++) {
+			while (lastIndex != -1) {
+
+				lastIndex = s.indexOf(tempString[k], lastIndex);
+
+				if (lastIndex != -1) {
+					count++;
+					lastIndex += tempString[k].length();
+				}
+			}
+		}
+		System.out.println(count);
+		//System.out.println(mlen);
+	}
+}

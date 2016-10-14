@@ -1,0 +1,24 @@
+package logicBasic;
+
+public class StartRepeat {
+
+	public static void main(String[] args) {
+		String star = "";
+		int n = 10;
+		for (int j = 0; j < n - 1; j++) {
+			for (int i = 0; i < j; i++) {
+				star = star + "*";
+				System.out.println(star);
+			}
+		}
+		
+		starRepeater(5, "*");
+	}
+
+	static String starRepeater(int n, String str) {
+		if (str.length() == 1)
+			return str;
+		else
+			return str + starRepeater(n - 1, str);
+	}
+}

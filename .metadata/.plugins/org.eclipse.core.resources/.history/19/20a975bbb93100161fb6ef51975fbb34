@@ -1,0 +1,18 @@
+package logicBasic;
+
+public class ReverseNumber {
+
+	public static void main(String[] args) {
+		int original = 457, remainder = 0, reversed = 0; 
+		while(original >  0){
+			remainder  = original % 10;
+			reversed = reversed * 10 + remainder;
+			original/=10;
+		}
+		System.out.println(reversed);
+		
+		System.out.println(original);
+	}
+	
+	
+}

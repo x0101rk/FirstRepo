@@ -1,0 +1,49 @@
+package linklistpkg;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.LinkedList;
+
+public class SequenceList {
+
+	public static LinkedList<Character> cl;
+
+	public static void main(String[] args) throws IOException {
+
+		FileReader inputStream = null;
+
+		try {
+			cl = new LinkedList<Character>();
+			inputStream = new FileReader("Xanadu.txt");
+
+			while ( inputStream.read() != -1) {
+				cl.add((char)inputStream.read());
+				checkSequence();
+			}
+
+		} finally {
+			if (inputStream != null) {
+				inputStream.close();
+			}
+
+		}
+	}
+
+	public static void checkSequence() {
+		if (cl.size() == 3) {
+			String str = "";
+			for (char ch : cl) {
+				str = str + ch;
+			}
+			if (str.equals("xYx")) {
+				System.out.print("A");
+			} else if (str.equals("xMx")) {
+				System.out.print("B");
+			} else if (str.equals("xxx")) {
+				System.out.print("C");
+			}
+			cl.remove();
+		}
+	}
+
+}

@@ -1,0 +1,18 @@
+package cmdLinePrgm;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.Vector;
+
+public class CompComp {
+	public static void main(String[] args) {
+		List alpha = new Vector();
+		alpha.add(20);
+		alpha.add(0);
+		alpha.add(12);
+		
+		Collections.sort(alpha);
+		System.out.println(alpha);
+	}
+
+}

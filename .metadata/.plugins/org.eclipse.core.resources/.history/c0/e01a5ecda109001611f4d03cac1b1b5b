@@ -1,0 +1,6 @@
+package practice;
+
+public class ClientThreader {
+
+	Thread t = new Thread(new SecondRunner());
+}

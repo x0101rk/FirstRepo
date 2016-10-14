@@ -1,0 +1,24 @@
+package pojo;
+
+public class Employee implements Comparable {
+
+	String firstName;
+	String lastName;
+	int id;
+	
+	public int compareTo(Object arg0) {
+		if()
+		return 0;
+	}
+	
+	public static void main(String[] args) {
+		Employee emp1 = new Employee();
+		Employee emp2 = new Employee();
+		Employee emp3 = new Employee();
+		Employee emp4 = new Employee();
+		Employee emp5 = new Employee();
+		Employee emp6 = new Employee();
+		
+		
+	}
+}

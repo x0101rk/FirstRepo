@@ -1,0 +1,24 @@
+package Set;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+
+public class SetTest {
+
+	public static void main(String[] args) {
+		
+		int[] present = new int[100];
+		present[0] = 1;
+		present[6] = 5;
+	  for(int i = 0; i < 100; i++){
+		  if(present[i]!=0){
+			  present[i] = i+1;			  
+		  }
+	  }
+	  for(int i : present){
+		  System.out.println(i);
+	  }
+	}
+
+}
